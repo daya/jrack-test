@@ -1,9 +1,14 @@
 #!/bin/sh
 set -e
+
+curl -s -o use-ruby https://repository-cloudbees.forge.cloudbees.com/distributions/ci-addons/use-ruby
+RUBY_VERSION=jruby-1.6.6 source ./use-ruby
+gem install --conservative bundler
+
 #install all gems
 bundle check || bundle install --deployment --local --without development
 
 #create war
-bundle exec warble war
+warble war
 
 set +e

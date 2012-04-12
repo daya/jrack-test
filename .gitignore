@@ -9,3 +9,20 @@ WEB-INF/*
 *.war
 log/*
 staxcat/*
+
+#Ignore bundler binstubs
+.bundle
+bin/*
+
+#Ignore Good Data folder
+bi/*
+
+# Exclude test reports
+spec/reports
+test/reports
+
+
+# Production files - we add these so that git status on a production server is "clean"
+log
+REVISION
+vendor/bundle
