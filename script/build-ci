@@ -4,6 +4,6 @@ set -e
 bundle check || bundle install --deployment --local --without development
 
 #create war
-warble war
+bundle exec warble war
 
 set +e
