@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+#install all gems
+bundle check || bundle install --deployment --local --without development
+
+#create war
+warble war
+
+set +e
