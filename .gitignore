@@ -24,8 +24,8 @@ test/reports
 # Production files - we add these so that git status on a production server is "clean"
 log
 REVISION
-vendor/bundle/**/gems
-vendor/bundle/**/bin
-vendor/bundle/**/doc
-vendor/bundle/**/specifications
+vendor/bundle/**/*/gems
+vendor/bundle/**/*/bin
+vendor/bundle/**/*/doc
+vendor/bundle/**/*/specifications
 !vendor/bundle/**/cache
