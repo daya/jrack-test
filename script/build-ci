@@ -5,15 +5,17 @@ echo ">>>>>> Installing JRuby"
 curl -s -o use-ruby https://repository-cloudbees.forge.cloudbees.com/distributions/ci-addons/use-ruby
 RUBY_VERSION=jruby-1.6.6 source ./use-ruby
 #echo ruby version
+echo ">>>>>> Echoing Ruby Version"
 ruby -v
 
 echo ">>>>>> Installing Bundler"
 #install bundler
-gem install --conservative bundler
+gem install bundler
 
 #install all gems
 echo ">>>>>> Installing all Gems"
-bundle check || bundle install --deployment --local --without development
+# bundle check || bundle install --deployment --local --without development
+bundle install --deployment --local --without development
 
 echo "Creating War"
 #create war
