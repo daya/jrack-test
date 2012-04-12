@@ -10,6 +10,7 @@ ruby -v
 
 echo ">>>>>> Installing Bundler"
 #install bundler
+gem install rake
 gem install bundler
 
 #install all gems
