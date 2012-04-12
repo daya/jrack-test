@@ -1,0 +1,6 @@
+coverage*
+pkg
+doc
+.bundle
+nbproject
+target

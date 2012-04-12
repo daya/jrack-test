@@ -2,8 +2,7 @@
 log/**/*
 tmp/*
 bin/*
-vendor/gems/*
-!vendor/gems/cache/
+
 .sass-cache/*
 WEB-INF/*
 *.war
@@ -11,7 +10,7 @@ log/*
 staxcat/*
 
 #Ignore bundler binstubs
-.bundle
+#.bundle
 bin/*
 
 #Ignore Good Data folder
@@ -25,4 +24,8 @@ test/reports
 # Production files - we add these so that git status on a production server is "clean"
 log
 REVISION
-vendor/bundle
+vendor/bundle/**/gems
+vendor/bundle/**/bin
+vendor/bundle/**/doc
+vendor/bundle/**/specifications
+!vendor/bundle/**/cache
