@@ -3,7 +3,8 @@ set -e
 echo ">>>>>> Installing JRuby"
 #install jruby
 curl -s -o use-ruby https://repository-cloudbees.forge.cloudbees.com/distributions/ci-addons/use-ruby
-RUBY_VERSION=jruby-1.6.6 source ./use-ruby
+#RUBY_VERSION=jruby-1.6.6 source ./use-ruby
+RUBY_VERSION=1.9.3-p125 source ./use-ruby
 #echo ruby version
 echo ">>>>>> Echoing Ruby Version"
 ruby -v
