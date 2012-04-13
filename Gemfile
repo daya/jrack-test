@@ -5,8 +5,8 @@ source :rubygems
 # gem 'mongrel'
 
 # Project requirements
-gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
+gem 'rake'
 
 # Component requirements
 gem 'haml'
