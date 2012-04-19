@@ -19,6 +19,8 @@ echo $PATH
 
 gem install bundler --no-ri --no-rdoc
 
+echo ">>>>>>>> where is rake"
+whereis rake
 #install all gems
 echo ">>>>>> Installing all Gems"
 # bundle check || bundle install --deployment --local --without development
