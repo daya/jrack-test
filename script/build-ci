@@ -23,6 +23,8 @@ echo ">>>>>>>> where is rake"
 whereis rake
 echo ">>>>>>>> which rake"
 which rake
+echo ">>>>>>>> rake version"
+rake -V
 #install all gems
 echo ">>>>>> Installing all Gems"
 # bundle check || bundle install --deployment --local --without development
