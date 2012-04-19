@@ -11,7 +11,9 @@ ruby -v
 
 echo ">>>>>> Installing Bundler"
 #install bundler
-# gem install rake
+gem install rake -i ./vendor/rake
+export PATH=./vendor/rake/bin:$PATH
+
 gem install bundler --no-ri --no-rdoc
 
 #install all gems
