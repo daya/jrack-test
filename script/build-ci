@@ -13,6 +13,7 @@ echo ">>>>>> Installing Bundler"
 #install bundler
 gem install rake -i ./vendor/rake
 export PATH=./vendor/rake/bin:$PATH
+echo $PATH
 
 gem install bundler --no-ri --no-rdoc
 
